@@ -1,18 +1,17 @@
 <GeneralContainer>
 <div class="product item-details-page">
-  <Product::Image />
-  <Product::Details />
+  <Product::Image @src={{this.productImage}}/>
+  <Product::Details @color={{this.color}} @onChangeColor={{this.onChangeColor}}/>
 </div>
 
 <h5 class="mt-5">Features</h5>
 <ul>
-    <li>Hight performace noise cancelling headphones in red</li>
+    <li>Hight performance noise cancelling headphones in red</li>
     <li>Active noise cancelling blocks external noise</li>
     <li>Compatible with iOS and Android</li>
     <li>Transparency helps you stay aware of your surroundings while listening</li>
     <li>Hans-free controls via "Hey Siri" on iOS devices</li>
     <li>Up to 22 hours of listening time</li>
-
 </ul>
 </GeneralContainer>
 {{outlet}}

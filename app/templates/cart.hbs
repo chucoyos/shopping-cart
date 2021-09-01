@@ -8,6 +8,12 @@
         </li>
         <li class="breadcrumb-item">Shopping-cart</li>
     </ol>
+
+    {{#each this.cart.itemList as |item|}}
+        <div class="d-flex align-items-center">
+            <h4>{{item.name}}</h4>
+        </div>
+    {{/each}}
     <section class="w-100 ml-auto text-end mb-5">
         <div class="d-flex justify-content-end">
             <span class="col-1">Subtotal</span>
